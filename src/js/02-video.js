@@ -8,7 +8,7 @@ const player = new Player(iframe);
 player.on('timeupdate', throttle(function (time) {
     localStorage.setItem(LOCAL_STORAGE_KEY, time.seconds);
 }, 1000));
-player.setCurrentTime(localStorage.getItem(LOCAL_STORAGE_KEY));
+player.setCurrentTime(localStorage.getItem(LOCAL_STORAGE_KEY || null));
 
 
 
