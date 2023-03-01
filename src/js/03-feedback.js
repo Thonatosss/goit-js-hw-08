@@ -34,5 +34,5 @@ function onSubmit(event) {
     userData = {
 
     }
-    form.reset();
+    event.target.reset();
 };
